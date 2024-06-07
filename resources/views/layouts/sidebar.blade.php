@@ -16,8 +16,12 @@
       </svg>
     </div>
 
-    <img x-cloak x-show="!(shrink ||drawer)" src="{{asset('assets/logo.png')}}" class="h-16 w-44 text-black"
-        alt="logo">
+    <img 
+      x-cloak x-show="!(shrink ||drawer)" 
+      src="{{asset('assets/logo.png')}}" 
+      class="h-16 w-44 text-black"
+      alt="logo"
+    >
   </div>
 
   {{-- Side content --}}
@@ -40,10 +44,9 @@
             </svg>
           @endif
         </span>
-            <h4 x-cloak x-show="!(shrink||drawer)"
-                class=" text-lg  {{request()->routeIs('Home')?'font-bold':'font-medium'}}"
-              >Home
-            </h4>
+        <h4 x-cloak x-show="!(shrink||drawer)"
+            class=" text-lg  {{request()->routeIs('Home')?'font-bold':'font-medium'}}"
+        >Home</h4>
       </a>
     </li>
 
@@ -192,7 +195,6 @@
     @endauth
   </ul>
 
-
   {{-- Footer --}}
   <footer class="sticky bottom-0 mt-auto w-full grid px-3 z-50 bg-white">
     <div class="dropdown dropdown-top ">
@@ -248,10 +250,6 @@
       </ul>
     </div>
   </footer>
-
-
-
-
 
   {{-- TODO: When you create sidebar as livewire component use @teleport blade directive --}}
   <template x-teleport="body">
