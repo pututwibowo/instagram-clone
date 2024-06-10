@@ -13,6 +13,7 @@
 
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
+        @livewireStyles
     </head>
     <body class="font-sans antialiased">
         <div class="drawer lg:drawer-open">
@@ -29,6 +30,7 @@
               @include('layouts.sidebar')
             
             </div>
-          </div>
+        </div>
+        @livewireScripts
     </body>
 </html>
