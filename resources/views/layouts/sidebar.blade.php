@@ -19,7 +19,7 @@
     <img 
       x-cloak x-show="!(shrink ||drawer)" 
       src="{{asset('assets/logo.png')}}" 
-      class="h-16 w-44 text-black"
+      class="h-16 text-black"
       alt="logo"
     >
   </div>
