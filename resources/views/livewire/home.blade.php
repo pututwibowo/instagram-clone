@@ -38,6 +38,11 @@
                     @endfor
                 </ul>
             </section>
+
+            {{-- Posts --}}
+            <section class="mt-4 space-y-4 p-2">
+                <livewire:post.item/>
+            </section>
         </aside>
 
         {{-- Sugestions --}}
